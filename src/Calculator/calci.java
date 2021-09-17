@@ -5,13 +5,18 @@ import java.util.Scanner;
 
 public class calci {
     public static void main(String[] args){
+        int principal;
         Scanner scan = new Scanner(System.in);
-        System.out.print("Principal : ");
-        float principal = scan.nextFloat();
+            do {
+                System.out.print("Principal : ");
+                scan.next();
+                System.out.println("\nEnter valid input");
+            } while (!scan.hasNextInt());
+            principal = scan.nextInt();
         System.out.print("Annual Interest Rate : ");
         float interest = scan.nextFloat();
         System.out.print("Period (Years) : ");
-        float years = scan.nextFloat();
+        int years = scan.nextInt();
         interest /= (1200);
         years *= 12;
         interest++;
