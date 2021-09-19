@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 public class calci {
     public static void main(String[] args){
-        int principal;
+        float principal;
         Scanner scan = new Scanner(System.in);
             while(true) {
                 System.out.print("Principal : ");
-                while (!scan.hasNextInt()) {//checks if input is numerical
+                while (!scan.hasNextFloat()) {//checks if input is numerical
                     scan.next();
                     System.out.println("only enter numbers");
                 }
-                principal = scan.nextInt();
+                principal = scan.nextFloat();
                 if(principal<10_000_000&&principal>1000)
                     break;
                 else
