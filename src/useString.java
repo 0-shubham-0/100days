@@ -18,7 +18,8 @@ public class useString {
 
         String ho = "YEs and nO";
 
-
+        boolean size= ho.isBlank();
+        System.out.println(size);
 
     }
 }
