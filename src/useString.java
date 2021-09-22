@@ -21,5 +21,21 @@ public class useString {
         boolean size= ho.isBlank();
         System.out.println(size);
 
+        String firstName = "salty";
+        String lastName = "drake";
+        System.out.println(firstName + " " + lastName);
+
+        // concatenating
+        System.out.println(firstName.concat(" ").concat(lastName));
+
+        //compare
+        String a="true";
+        String b="false";
+
+        System.out.println(a.equals(b));//compares their location not the string
+        System.out.println(a.compareTo(b));//compares the value
+
+
+
     }
 }
