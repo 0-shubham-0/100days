@@ -36,6 +36,5 @@ public class useString {
         System.out.println(a.compareTo(b));//compares the value
 
 
-
     }
 }
